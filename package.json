@@ -1,0 +1,23 @@
+{
+  "name": "comment-value-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node -r comment-value index.js && diff index.js expected.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bahmutov/comment-value-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bahmutov/comment-value-test/issues"
+  },
+  "homepage": "https://github.com/bahmutov/comment-value-test#readme",
+  "dependencies": {
+    "comment-value": "1.2.0"
+  }
+}
