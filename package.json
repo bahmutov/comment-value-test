@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node -r comment-value index.js && diff index.js expected.js",
-    "test-nested": "DEBUG=comment-value node -r comment-value tests/nested"
+    "test": "npm run test-simple && npm run test-nested",
+    "test-simple": "node -r comment-value index.js && diff index.js expected.js",
+    "test-nested": "DEBUG=comment-value node -r comment-value tests/nested && diff tests/nested/index.js tests/nested/expected.js"
   },
   "repository": {
     "type": "git",
