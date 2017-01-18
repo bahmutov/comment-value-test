@@ -7,3 +7,5 @@ const result = add(1, 1) + add(2, 2)
 const add3 = x => x + 3
 const mul5 = x => x * 5
 add3(mul5(2)) //> 13
+
+console.log('all done in', __filename)
