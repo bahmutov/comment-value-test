@@ -6,7 +6,8 @@
   "scripts": {
     "test": "npm run test-simple && npm run test-nested",
     "test-simple": "node -r comment-value index.js && diff index.js expected.js",
-    "test-nested": "DEBUG=comment-value node -r comment-value tests/nested && diff tests/nested/index.js tests/nested/expected.js"
+    "test-nested": "DEBUG=comment-value node -r comment-value tests/nested && diff tests/nested/index.js tests/nested/expected.js",
+    "test-ramda": "DEBUG=comment-value node -r comment-value tests/variables && diff tests/variables/index.js tests/variables/expected.js"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,7 @@
   },
   "homepage": "https://github.com/bahmutov/comment-value-test#readme",
   "dependencies": {
-    "comment-value": "1.3.0"
+    "comment-value": "1.3.0",
+    "ramda": "^0.23.0"
   }
 }
